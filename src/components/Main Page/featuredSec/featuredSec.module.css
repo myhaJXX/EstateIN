@@ -1,0 +1,31 @@
+.cont{
+    justify-self: center;
+    width: 90%;
+    display: grid;
+    gap: 20px;
+}
+
+.cont>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cont p{
+    max-width: 70%;
+}
+
+.cont button{
+    padding: 10px;
+    border: 2px solid var(--purple);
+    border-radius: 5px;
+    color: var(--purple);
+    background-color: var(--grey);
+    cursor: pointer;
+    transition: all .4s linear;
+}
+
+.cont button:hover{
+    color: #fff;
+    border-color: #fff;
+}

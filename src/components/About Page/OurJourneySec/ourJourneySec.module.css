@@ -1,0 +1,25 @@
+.cont{
+    justify-self: center;
+    width: 90%;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    gap: 5%;
+}
+
+.cont>aside{
+    display: grid;
+    gap: 20px;
+    align-content: center;
+}
+
+.cont div{
+    display: flex;
+    gap: 10px;
+}
+
+.cont>img{
+    align-self: center;
+    width: 100%;
+    border: 2px solid var(--greyv2);
+    border-radius: 15px;
+}

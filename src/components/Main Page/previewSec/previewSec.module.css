@@ -1,0 +1,90 @@
+.cont{
+    height: 850px;
+    display: grid;
+    grid-template: 1fr 250px / repeat(2, 1fr);
+}
+
+.cont>aside{
+    padding: 20% 10%;
+    display: grid;
+    gap: 10%;
+    align-content: center;
+}
+
+.cont div{
+    display: flex;
+    gap: 10px;
+}
+
+.cont button{
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .4s linear;
+}
+
+.cont button:hover{
+    transform: scale(1.1);
+}
+
+.cont button:nth-child(1){
+    background-color: var(--grey);
+}
+
+.cont button:nth-child(2){
+    background-color: var(--purple);
+}
+
+.cont button:nth-child(1):hover{
+    background-color: var(--purple);
+}
+
+.cont button:nth-child(2):hover{
+    background-color: var(--grey);
+}
+
+.stats-box{
+    justify-content: space-between;
+}
+
+.stats-box>article{
+    border-radius: 15px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: var(--grey);
+}
+
+.cards{
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.cards>article{
+    height: 100%;
+    width: 24%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--grey);
+}
+
+.cards svg{
+    height: 25px;
+    width: 25px;
+    padding: 15px;
+    border-top: 2px solid var(--light-purple);
+    border-bottom: 2px solid var(--light-purple);
+    border-radius: 50%;
+    color: var(--light-purple);
+    position: relative;
+}
+
+.cards svg::before{
+    content: "as";
+    color: red;
+}

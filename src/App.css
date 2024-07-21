@@ -1,0 +1,54 @@
+:root {
+    --dark-grey: #141414;
+    --grey: #1A1A1A;
+    --light-grey: #999999;
+    --greyv2: #262626;
+    --purple: #703BF7;
+    --light-purple: #A685FA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Urbanist", sans-serif;
+    color: #fff;
+    background-color: var(--dark-grey);
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
+p{
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--light-grey);
+}
+
+button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+}
+
+main{
+    display: grid;
+    gap: 30px;
+}

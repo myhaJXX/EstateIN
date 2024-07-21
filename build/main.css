@@ -1,0 +1,349 @@
+/*!****************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./App.css ***!
+  \****************************************************************************************/
+:root {
+    --dark-grey: #141414;
+    --grey: #1A1A1A;
+    --light-grey: #999999;
+    --greyv2: #262626;
+    --purple: #703BF7;
+    --light-purple: #A685FA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Urbanist", sans-serif;
+    color: #fff;
+    background-color: var(--dark-grey);
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
+p{
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--light-grey);
+}
+
+button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+}
+
+main{
+    display: grid;
+    gap: 30px;
+}
+/*!**************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./components/Main Page/previewSec/previewSec.module.css ***!
+  \**************************************************************************************************************************************/
+.previewSec-module-cont-dYT0n{
+    height: 850px;
+    display: grid;
+    grid-template: 1fr 250px / repeat(2, 1fr);
+}
+
+.previewSec-module-cont-dYT0n>aside{
+    padding: 20% 10%;
+    display: grid;
+    gap: 10%;
+    align-content: center;
+}
+
+.previewSec-module-cont-dYT0n div{
+    display: flex;
+    gap: 10px;
+}
+
+.previewSec-module-cont-dYT0n button{
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .4s linear;
+}
+
+.previewSec-module-cont-dYT0n button:hover{
+    transform: scale(1.1);
+}
+
+.previewSec-module-cont-dYT0n button:nth-child(1){
+    background-color: var(--grey);
+}
+
+.previewSec-module-cont-dYT0n button:nth-child(2){
+    background-color: var(--purple);
+}
+
+.previewSec-module-cont-dYT0n button:nth-child(1):hover{
+    background-color: var(--purple);
+}
+
+.previewSec-module-cont-dYT0n button:nth-child(2):hover{
+    background-color: var(--grey);
+}
+
+.previewSec-module-stats-box-QI_HT{
+    justify-content: space-between;
+}
+
+.previewSec-module-stats-box-QI_HT>article{
+    border-radius: 15px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: var(--grey);
+}
+
+.previewSec-module-cards-_1okX{
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.previewSec-module-cards-_1okX>article{
+    height: 100%;
+    width: 24%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--grey);
+}
+
+.previewSec-module-cards-_1okX svg{
+    height: 25px;
+    width: 25px;
+    padding: 15px;
+    border-top: 2px solid var(--light-purple);
+    border-bottom: 2px solid var(--light-purple);
+    border-radius: 50%;
+    color: var(--light-purple);
+    position: relative;
+}
+
+.previewSec-module-cards-_1okX svg::before{
+    content: "as";
+    color: red;
+}
+/*!****************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./components/Main Page/featuredSec/featuredSec.module.css ***!
+  \****************************************************************************************************************************************/
+.featuredSec-module-cont-Nzq3G{
+    justify-self: center;
+    width: 90%;
+    display: grid;
+    gap: 20px;
+}
+
+.featuredSec-module-cont-Nzq3G>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featuredSec-module-cont-Nzq3G p{
+    max-width: 70%;
+}
+
+.featuredSec-module-cont-Nzq3G button{
+    padding: 10px;
+    border: 2px solid var(--purple);
+    border-radius: 5px;
+    color: var(--purple);
+    background-color: var(--grey);
+    cursor: pointer;
+    transition: all .4s linear;
+}
+
+.featuredSec-module-cont-Nzq3G button:hover{
+    color: #fff;
+    border-color: #fff;
+}
+/*!****************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./components/card/card.module.css ***!
+  \****************************************************************************************************************/
+.card-module-card-q2FD0{
+    padding: 20px;
+    height: 560px;
+    width: 400px;
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+    display: grid;
+    grid-template: 220px 20px 1fr 50px 65px / 100%;
+    gap: 20px;
+    align-items: center;
+}
+
+.card-module-rooms-CW2cd{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-module-rooms-CW2cd>div{
+    display: flex;
+    gap: 5px;
+    padding: 7.5px 15px;
+    border-radius: 15px;
+    background-color: var(--grey);
+}
+
+.card-module-card-q2FD0>img{
+    height: 100%;
+    width: 100%;
+}
+
+.card-module-card-q2FD0 h3{
+    font-size: 1.25em;
+}
+
+.card-module-card-q2FD0 button{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 2px solid var(--grey);
+    background-color: var(--purple);
+    transition: all .4s linear;
+}
+
+.card-module-card-q2FD0 button:hover{
+    border-color: var(--purple);
+    color: var(--purple);
+    background-color: transparent;
+}
+
+.card-module-card-q2FD0>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*!**************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./components/Main Page/ReviewsSec/reviewsSec.module.css ***!
+  \**************************************************************************************************************************************/
+.reviewsSec-module-cont-VLgAq{
+    display: grid;
+    grid-template-columns: 90%;
+    gap: 20px;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.reviewsSec-module-cont-VLgAq>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewsSec-module-cont-VLgAq button{
+    padding: 10px;
+    border: 2px solid var(--grey);
+    border-radius: 5px;
+    transition: all .4s linear;
+    cursor: pointer;
+}
+
+.reviewsSec-module-cont-VLgAq button:hover{
+    border-color: var(--purple);
+    color: var(--purple);
+}
+
+.reviewsSec-module-card-dAr3r{
+    padding: 30px;
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template: 40px 25px 1fr 60px / 100%;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+}
+
+.reviewsSec-module-star-fBHbH{
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--grey);
+}
+
+.reviewsSec-module-card-dAr3r p{
+    align-self: flex-start;
+}
+
+.reviewsSec-module-personInfo-CHSAR{
+    display: grid;
+    gap: 5px;
+    grid-template: repeat(2, 1fr) / 60px 1fr;
+    align-items: center;
+}
+
+.reviewsSec-module-ava-QxMv5{
+    width: 25px;
+    height: 25px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--light-grey);
+    background-color: var(--grey);
+}
+
+.reviewsSec-module-personInfo-CHSAR h4{
+    align-self: flex-end;
+}
+
+.reviewsSec-module-personInfo-CHSAR p{
+    align-self: flex-start;
+}
+
+.reviewsSec-module-buttons-i4vBU{
+    display: flex;
+    gap: 10px;
+}
+
+.reviewsSec-module-comments-box-bT55k{
+    transition: opacity .3s linear;
+}
+
+.reviewsSec-module-button-LUIPI{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    border: 2px solid var(--greyv2);
+    border-radius: 50%;
+    background-color: var(--grey);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.reviewsSec-module-button-LUIPI:hover{
+    color: var(--greyv2);
+}
+

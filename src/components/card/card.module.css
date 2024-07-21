@@ -1,0 +1,57 @@
+.card{
+    padding: 20px;
+    height: 560px;
+    width: 400px;
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+    display: grid;
+    grid-template: 220px 20px 1fr 50px 65px / 100%;
+    gap: 20px;
+    align-items: center;
+}
+
+.rooms{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rooms>div{
+    display: flex;
+    gap: 5px;
+    padding: 7.5px 15px;
+    border-radius: 15px;
+    background-color: var(--grey);
+}
+
+.card>img{
+    height: 100%;
+    width: 100%;
+}
+
+.card h3{
+    font-size: 1.25em;
+}
+
+.card button{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 2px solid var(--grey);
+    background-color: var(--purple);
+    transition: all .4s linear;
+}
+
+.card button:hover{
+    border-color: var(--purple);
+    color: var(--purple);
+    background-color: transparent;
+}
+
+.card>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
