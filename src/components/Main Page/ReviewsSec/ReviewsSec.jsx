@@ -8,13 +8,18 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 function ReviewsSec() {
 
     const [size, setSize] = useState(Math.floor(window.innerWidth / 400))
+
+    window.addEventListener('resize', ()=>{
+        setSize(Math.floor(window.innerWidth / 400))
+    })
+
     const [comments, setComments] = useState([])
 
     const [page, setPage] = useState(0)
 
     let amount = Math.ceil(reviews.length / size);
 
-    useEffect(()=>{
+    useMemo(()=>{
         let length = size + page*size
         let copy = []
         for(let i = size*page;i<length;i++){

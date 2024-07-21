@@ -13,10 +13,64 @@
     box-sizing: border-box;
 }
 
+header{
+    height: 50px;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey);
+}
+
+header>div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header img{
+    height: 30px;
+}
+
+header nav{
+    display: flex;
+    gap: 5px;
+}
+
+.HU{
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+
+.HU:hover{
+    background-color: var(--greyv2);
+}
+
+.HA{
+    border-color: var(--greyv2);
+    background-color: var(--grey);
+}
+
+.contact{
+    padding: 10px 15px;
+    border: 2px solid var(--greyv2);
+    border-radius: 5px;
+    background-color: var(--grey);
+    cursor: pointer;
+}
+
 body{
     font-family: "Urbanist", sans-serif;
     color: #fff;
     background-color: var(--dark-grey);
+}
+
+body>div{
+    display: grid;
+    gap: 20px;
 }
 
 h1{
@@ -48,7 +102,18 @@ button{
     font-family: "Urbanist", sans-serif;
 }
 
+input{
+    outline: none;
+    border: none;
+}
+
 main{
     display: grid;
     gap: 30px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
 }
