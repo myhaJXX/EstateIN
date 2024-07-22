@@ -16,10 +16,64 @@
     box-sizing: border-box;
 }
 
+header{
+    height: 50px;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey);
+}
+
+header>div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header img{
+    height: 30px;
+}
+
+header nav{
+    display: flex;
+    gap: 5px;
+}
+
+.App-HU-GCA8H{
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+
+.App-HU-GCA8H:hover{
+    background-color: var(--greyv2);
+}
+
+.App-HA-LObtW{
+    border-color: var(--greyv2);
+    background-color: var(--grey);
+}
+
+.App-contact-eyq3S{
+    padding: 10px 15px;
+    border: 2px solid var(--greyv2);
+    border-radius: 5px;
+    background-color: var(--grey);
+    cursor: pointer;
+}
+
 body{
     font-family: "Urbanist", sans-serif;
     color: #fff;
     background-color: var(--dark-grey);
+}
+
+body>div{
+    display: grid;
+    gap: 20px;
 }
 
 h1{
@@ -51,9 +105,20 @@ button{
     font-family: "Urbanist", sans-serif;
 }
 
+input{
+    outline: none;
+    border: none;
+}
+
 main{
     display: grid;
     gap: 30px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
 }
 /*!**************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./components/Main Page/previewSec/previewSec.module.css ***!
@@ -65,7 +130,7 @@ main{
 }
 
 .previewSec-module-cont-dYT0n>aside{
-    padding: 20% 10%;
+    padding: 10%;
     display: grid;
     gap: 10%;
     align-content: center;
@@ -347,3 +412,270 @@ main{
     color: var(--greyv2);
 }
 
+/*!*********************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./components/About Page/OurJourneySec/ourJourneySec.module.css ***!
+  \*********************************************************************************************************************************************/
+.ourJourneySec-module-cont-W40bj{
+    justify-self: center;
+    width: 90%;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    gap: 5%;
+}
+
+.ourJourneySec-module-cont-W40bj>aside{
+    display: grid;
+    gap: 20px;
+    align-content: center;
+}
+
+.ourJourneySec-module-cont-W40bj div{
+    display: flex;
+    gap: 10px;
+}
+
+.ourJourneySec-module-cont-W40bj>img{
+    align-self: center;
+    width: 100%;
+    border: 2px solid var(--greyv2);
+    border-radius: 15px;
+}
+/*!*******************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./components/About Page/OurValuesSec/ourValuesSec.module.css ***!
+  \*******************************************************************************************************************************************/
+.ourValuesSec-module-cont-ytRSk{
+    justify-self: center;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.ourValuesSec-module-cont-ytRSk>div:nth-child(1){
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ourValuesSec-module-cont-ytRSk>div:nth-child(2){
+    padding: 40px;
+    height: 300px;
+    width: 60%;
+    border: 2px solid var(--greyv2);
+    border-radius: 15px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 20px;
+}
+
+.ourValuesSec-module-card-UUVTO{
+    display: grid;
+    grid-template: 40px 1fr / 40px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.ourValuesSec-module-card-UUVTO p{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.ourValuesSec-module-card-UUVTO svg{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    border: 2px solid var(--light-purple);
+    border-radius: 50%;
+    color: var(--light-purple);
+}
+/*!**********************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./components/About Page/OurAchievementsSec/ourAchSec.module.css ***!
+  \**********************************************************************************************************************************************/
+.ourAchSec-module-cont-FD10s{
+    justify-self: center;
+    width: 90%;
+    display: grid;
+    gap: 20px;
+}
+
+.ourAchSec-module-cont-FD10s>p{
+    width: 70%;
+}
+
+.ourAchSec-module-cont-FD10s>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourAchSec-module-card-xyPdk{
+    width: 30%;
+    padding: 40px;
+    display: grid;
+    gap: 10px;
+    border: 2px solid var(--greyv2);
+    border-radius: 15px;
+}
+/*!*************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./components/About Page/OurNavSec/OurNavSec.module.css ***!
+  \*************************************************************************************************************************************/
+.OurNavSec-module-cont-RH2UD{
+    justify-self: center;
+    width: 90%;
+    display: grid;
+    gap: 20px;
+}
+
+.OurNavSec-module-cont-RH2UD>p{
+    width: 60%;
+}
+
+.OurNavSec-module-box-G6jjU{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 20px;
+}
+
+.OurNavSec-module-card-ee6lL{
+    height: 200px;
+    width: 100%;
+    display: grid;
+    grid-template: 50px calc(100% - 50px) / 100%;
+}
+
+.OurNavSec-module-card-ee6lL>h4{
+    padding-left: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-left: 2px solid var(--purple);
+}
+
+.OurNavSec-module-card-ee6lL>div{
+    padding: 20px;
+    border: 2px solid var(--greyv2);
+    display: grid;
+    align-items: center;
+}
+/*!********************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./components/Footer/footer.module.css ***!
+  \********************************************************************************************************************/
+.footer-module-top-Cx1Um{
+    padding: 30px 20px;
+    border-top: 2px solid var(--greyv2);
+    border-bottom: 2px solid var(--greyv2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey);
+}
+
+.footer-module-top-Cx1Um>div{
+    max-width: 70%;
+}
+
+.footer-module-top-Cx1Um>button{
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: var(--purple);
+    transition: all .4s linear;
+    cursor: pointer;
+}
+
+.footer-module-top-Cx1Um>button:hover{
+    border-color: var(--greyv2);
+    background-color: transparent;
+}
+
+.footer-module-middle-RnpoW{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-module-middle-RnpoW>div{
+    width: 30%;
+}
+
+.footer-module-MI-BSJ3H input{
+    padding: 10px;
+    height: 20px;
+    background-color: transparent;
+}
+
+.footer-module-MI-BSJ3H{
+    padding: 10px;
+    width: fit-content;
+    border: 2px solid var(--greyv2);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-module-middle-RnpoW>nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-module-footer-column-kXdt8{
+    display: grid;
+    gap: 5px;
+    align-content: flex-start;
+}
+
+.footer-module-footer-column-kXdt8>a{
+    width: fit-content;
+    transition: all .4s linear;
+    cursor: pointer;
+}
+
+.footer-module-footer-column-kXdt8>a:hover{
+    color: var(--light-grey);
+    transform: scale(1.1);
+}
+
+.footer-module-bottom-VTCO9{
+    padding: 20px;
+    border-top: 2px solid var(--greyv2);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--grey);
+}
+
+.footer-module-bottom-VTCO9>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-module-bottom-VTCO9 a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .4s linear;
+}
+
+.footer-module-bottom-VTCO9 a:hover{
+    color: var(--light-grey);
+}
+
+.footer-module-icon-okfB1{
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: var(--dark-grey);
+    transition: all .4s linear;
+    cursor: pointer;
+}
+
+.footer-module-icon-okfB1:hover{
+    border-color: var(--light-grey);
+    color: var(--light-grey);
+    background-color: transparent;
+}

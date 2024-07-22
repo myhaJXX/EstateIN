@@ -81,10 +81,4 @@
     border-bottom: 2px solid var(--light-purple);
     border-radius: 50%;
     color: var(--light-purple);
-    position: relative;
-}
-
-.cards svg::before{
-    content: "as";
-    color: red;
 }

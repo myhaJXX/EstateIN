@@ -6,6 +6,7 @@ import AboutPage from './components/About Page/AboutPage'
 import ErrorPage from './components/Error/ErrorPage'
 import Header from './components/Header/header'
 import Footer from './components/Footer/Footer'
+import ServPage from './components/Serv Page/ServPage'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
                 <Routes>
                     <Route exact path='/' element={<MainPage/>}/>
                     <Route path='/about' element={<AboutPage/>}/>
+                    <Route path='/services' element={<ServPage/>}/>
                     <Route path='/*' element={<ErrorPage/>}/>
                 </Routes>
                 <Footer/>
