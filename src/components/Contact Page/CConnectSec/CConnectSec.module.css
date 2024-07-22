@@ -1,0 +1,49 @@
+.cont{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cont form{
+    display: grid;
+    grid-template: repeat(auto-fill, 120px) / repeat(auto-fill, 400px);
+    justify-content: space-between;
+}
+
+.cont div{
+    display: grid;
+    align-content: flex-start;
+    gap: 15px;
+    height: 120px;
+}
+
+.cont h5{
+    font-size: 1em;
+}
+
+.cont input{
+    padding: 10px;
+    border: 2px solid var(--greyv2);
+    border-radius: 5px;
+    background-color: var(--grey);
+    color: var(--light-grey);
+}
+
+.cont>button{
+    margin-left: auto;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--purple);
+    transition: all .4s linear;
+    cursor: pointer;
+}
+
+.cont>button:hover{
+    color: var(--purple);
+    border-color: var(--purple);
+    background-color: transparent;
+}
