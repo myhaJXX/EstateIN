@@ -7,6 +7,7 @@ import { faShop } from '@fortawesome/free-solid-svg-icons'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import { faCity } from '@fortawesome/free-solid-svg-icons'
 import { faSun } from '@fortawesome/free-solid-svg-icons'
+import img from '@static/prev.png'
 
 console.log(styles.cont)
 
@@ -35,6 +36,8 @@ function PreviewSec() {
         </div>
 
       </aside>
+
+      <img style={{width: '90%', justifySelf:'center'}} src={img} alt="" />
 
       <div className={styles.cards}>
         <PreviewCard icon={faShop} title={'Find Your Dream Home'}/>

@@ -7,6 +7,7 @@ import ErrorPage from './components/Error/ErrorPage'
 import Header from './components/Header/header'
 import Footer from './components/Footer/Footer'
 import ContactPage from './components/Contact Page/ContactPage'
+import ServPage from './components/Serv Page/ServPage'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
                     <Route exact path='/' element={<MainPage/>}/>
                     <Route path='/about' element={<AboutPage/>}/>
                     <Route path='/contact' element={<ContactPage/>}/>
+                    <Route path='/services' element={<ServPage/>}/>
                     <Route path='/*' element={<ErrorPage/>}/>
                 </Routes>
                 <Footer/>

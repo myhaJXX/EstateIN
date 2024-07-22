@@ -1,0 +1,69 @@
+.cont{
+    justify-self: center;
+    width: 90%;
+    display: grid;
+    gap: 20px;
+}
+
+.box{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template: repeat(2, 200px) / repeat(3, 1fr);
+}
+
+.box>article{
+    padding: 30px;
+    display: grid;
+    align-items: center;
+    grid-template: 60px 1fr / 60px 1fr;
+    gap: 20px;
+    background-color: var(--grey);
+    border-radius: 15px;
+}
+
+.box svg{
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+    border: 2px solid var(--light-purple);
+    color: var(--light-purple);
+    border-radius: 50%;
+}
+
+.box p{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.bigCard{
+    padding: 30px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: var(--greyv2);
+}
+
+.bigCard>div{
+    display: flex;
+    align-items: center;
+}
+
+.bigCard button{
+    margin-left: auto;
+    padding: 10px 20px;
+    border: 2px solid var(--light-grey);
+    border-radius: 5px;
+    background-color: var(--grey);
+    cursor: pointer;
+    transition: all .4s linear;
+}
+
+.bigCard button:hover{
+    background-color: var(--grey);
+    border-color: var(--light-purple);
+    color: var(--light-purple);
+}
