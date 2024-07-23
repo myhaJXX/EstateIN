@@ -8,6 +8,7 @@ import Header from './components/Header/header'
 import Footer from './components/Footer/Footer'
 import ContactPage from './components/Contact Page/ContactPage'
 import ServPage from './components/Serv Page/ServPage'
+import PropPage from './components/Prop Page/PropPage'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
                     <Route path='/contact' element={<ContactPage/>}/>
                     <Route path='/services' element={<ServPage/>}/>
                     <Route path='/*' element={<ErrorPage/>}/>
+                    <Route path='/catalog' element={<PropPage/>}/>
                 </Routes>
                 <Footer/>
             </BrowserRouter>

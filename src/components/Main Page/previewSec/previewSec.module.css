@@ -82,3 +82,15 @@
     border-radius: 50%;
     color: var(--light-purple);
 }
+
+@media (max-width: 800px){
+    .cont img{
+        display: none;
+    }
+
+    .cont{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

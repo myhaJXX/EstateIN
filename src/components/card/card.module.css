@@ -33,7 +33,7 @@
 }
 
 .card button{
-    height: 100%;
+    height: 40px;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -42,6 +42,7 @@
     border: 2px solid var(--grey);
     background-color: var(--purple);
     transition: all .4s linear;
+    cursor: pointer;
 }
 
 .card button:hover{

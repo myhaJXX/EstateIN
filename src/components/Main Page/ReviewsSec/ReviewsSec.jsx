@@ -7,10 +7,11 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function ReviewsSec() {
 
-    const [size, setSize] = useState(Math.floor(window.innerWidth / 400))
+    const [size, setSize] = useState(Math.floor(window.innerWidth / 420))
 
     window.addEventListener('resize', ()=>{
-        setSize(Math.floor(window.innerWidth / 400))
+        setSize(Math.floor(window.innerWidth / 420))
+        console.log(window.innerWidth / 400)
     })
 
     const [comments, setComments] = useState([])
@@ -26,6 +27,7 @@ function ReviewsSec() {
             copy.push(reviews[i])
         }
         setComments([...copy])
+        console.log(size)
     }, [size, page])
 
     useMemo(()=>{

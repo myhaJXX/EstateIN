@@ -7,9 +7,9 @@ import { useNavigate } from 'react-router-dom'
 function Header({setPage}) {
     const nav = useNavigate()
 
-    // useEffect(()=>{
-    //     nav('/')
-    // }, [])
+    useEffect(()=>{
+        nav('/')
+    }, [])
 
   return (
     <header>

@@ -68,9 +68,21 @@ body{
     background-color: var(--dark-grey);
 }
 
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--purple);
+}
+
+.body::-webkit-scrollbar-track{
+    background-color: var(--greyv2);
+}
+
 body>div{
     display: grid;
-    gap: 20px;
+    gap: 50px;
 }
 
 h1{
@@ -109,11 +121,17 @@ input{
 
 main{
     display: grid;
-    gap: 30px;
+    gap: 50px;
 }
 
 footer{
     display: grid;
     grid-template-columns: 90%;
     justify-content: center;
+}
+
+@media(max-width: 800px){
+    h4{
+        font-size: 0.875em;
+    }
 }
