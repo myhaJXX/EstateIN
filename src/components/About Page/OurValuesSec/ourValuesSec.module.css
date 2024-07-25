@@ -45,3 +45,24 @@
     border-radius: 50%;
     color: var(--light-purple);
 }
+
+@media (max-width: 1080px){
+    .cont>div:nth-child(2){
+        padding: 10px;
+    }
+}
+
+@media (max-width: 800px){
+    .cont{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cont>div:nth-child(1), .cont>div:nth-child(2){
+        width: 100%;
+    }
+
+    .cont>div:nth-child(2){
+        height: 350px;
+    }
+}

@@ -57,3 +57,19 @@
 .cont a{
     color: #fff;
 }
+
+@media (max-width: 1080px){
+    .cont>div{
+        flex-wrap: wrap;
+    }
+
+    .cont article{
+        width: 300px;
+    }
+}
+
+@media (max-width: 700px){
+    .cont article{
+        width: 100%;
+    }
+}

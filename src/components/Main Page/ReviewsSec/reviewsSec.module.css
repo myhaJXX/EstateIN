@@ -100,3 +100,19 @@
 .button:hover{
     color: var(--greyv2);
 }
+
+@media(max-width: 800px){
+    .cont>div:nth-child(3){
+        justify-content: center;
+    }
+}
+
+@media(max-width: 450px){
+    .card{
+        padding: 5px;
+        height: 300px;
+        width: 300px;
+        justify-items: center;
+        text-align: center;
+    }
+}

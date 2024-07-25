@@ -6,6 +6,7 @@ import logo from '@static/logo.png'
 import { useNavigate } from 'react-router-dom'
 
 function CPreviewSec() {
+    const nav = useNavigate()
   return (
     <section className={cl.cont}>
         <h1>Get in Touch with Estatein</h1>
@@ -23,9 +24,24 @@ function CPreviewSec() {
             <article>
                 <img src={logo} alt="" />
                 <nav>
-                    <a href="">Instagram</a>
-                    <a href="">Facebook</a>
-                    <a href="">Telegram</a>
+                    <a href=""
+                    onClick={(e)=>{
+                        e.preventDefault()
+                        nav('/error')
+                    }}
+                    >Instagram</a>
+                    <a href=""
+                    onClick={(e)=>{
+                        e.preventDefault()
+                        nav('/error')
+                    }}
+                    >Facebook</a>
+                    <a href=""
+                    onClick={(e)=>{
+                        e.preventDefault()
+                        nav('/error')
+                    }}
+                    >Telegram</a>
                 </nav>
             </article>
 

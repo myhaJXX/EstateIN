@@ -29,6 +29,7 @@
 .middle{
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -56,6 +57,7 @@
 .middle>nav{
     width: 70%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -115,4 +117,31 @@
     border-color: var(--light-grey);
     color: var(--light-grey);
     background-color: transparent;
+}
+
+@media (max-width: 800px){
+    .middle{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .middle>div, .middle>nav{
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px){
+    .top{
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .top>div{
+        max-width: 100%;
+    }
+
+    .bottom{
+        flex-direction: column;
+    }
 }

@@ -40,3 +40,28 @@
     color: var(--light-purple);
     position: relative;
 }
+
+@media (max-width: 800px){
+    .cont{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cont>div:nth-child(2){
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .cont article{
+        padding: 10px;
+        height: 150px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 450px){
+    .cont>div:nth-child(2){
+        justify-content: center;
+    }
+}

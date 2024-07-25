@@ -89,8 +89,37 @@
     }
 
     .cont{
-        height: auto;
+        height: fit-content;
         display: flex;
         flex-direction: column;
+    }
+
+    .cards{
+        height: fit-content;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cards>article{
+        width: 300px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 450px){
+    .cont>aside{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stats-box>article{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .cont button{
+        padding: 10px;
     }
 }

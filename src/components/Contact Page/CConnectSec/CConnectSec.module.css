@@ -8,6 +8,7 @@
 .cont form{
     display: grid;
     grid-template: repeat(auto-fill, 120px) / repeat(auto-fill, 400px);
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -46,4 +47,16 @@
     color: var(--purple);
     border-color: var(--purple);
     background-color: transparent;
+}
+
+@media (max-width: 500px){
+    .cont form{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .cont div{
+        height: 100px;
+    }
 }

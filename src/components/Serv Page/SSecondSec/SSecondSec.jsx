@@ -12,7 +12,7 @@ function SSecondSec({title, info, cards, title2, info2}) {
         <div className={cl.box}>
 
             {cards.map((e,i)=>{
-                return  <article>
+                return  <article key={i}>
                             <FontAwesomeIcon icon={e.icon}/>
                             <h4>{e.title}</h4>
                             <p>{e.desc}</p>

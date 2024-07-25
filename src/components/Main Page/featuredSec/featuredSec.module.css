@@ -16,6 +16,8 @@
 }
 
 .cont button{
+    align-self: center;
+    max-height: 40px;
     padding: 10px;
     border: 2px solid var(--purple);
     border-radius: 5px;
@@ -28,4 +30,22 @@
 .cont button:hover{
     color: #fff;
     border-color: #fff;
+}
+
+@media(max-width: 800px){
+    .cont>div:last-child{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 450px){
+    .cont>div{
+        justify-content: center;
+        text-align: justify;
+        gap: 10px;
+    }
+
+    .cont p{
+        max-width: 90%;
+    }
 }

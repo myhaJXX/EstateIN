@@ -58,3 +58,19 @@
     background-color: var(--grey);
     color: var(--light-grey);
 }
+
+@media (max-width: 700px){
+    .cont>div:nth-child(1){
+        width: 95%;
+    }
+}
+
+@media(max-width: 450px){
+    .filters>input{
+        width: 130px;
+    }
+
+    .cont input+button{
+        padding: 10px 20px;
+    }
+}

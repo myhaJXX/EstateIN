@@ -26,3 +26,15 @@
 .cont>div::-webkit-scrollbar-track{
     background-color: var(--greyv2);
 }
+
+@media (max-width: 900px){
+    .cont>div{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px){
+    .cont>div{
+        grid-template: repeat(auto-fill, 410px) / repeat(auto-fill, 300px);
+    }
+}

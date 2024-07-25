@@ -11,10 +11,10 @@ function SPreviewSec() {
     <section className={cl.cont}>
 
       <div>
-        <h1>
+        <h1 style={{textAlign:'center'}}>
         Elevate Your Real Estate Experience
         </h1>
-        <p>
+        <p style={{maxWidth:'70%', textAlign: 'center'}}>
         Welcome to Estatein, where your real estate aspirations meet expert guidance. 
         Explore our comprehensive range of services, each designed to cater to your unique needs and dreams.
         </p>

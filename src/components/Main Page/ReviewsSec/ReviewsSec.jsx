@@ -10,8 +10,9 @@ function ReviewsSec() {
     const [size, setSize] = useState(Math.floor(window.innerWidth / 420))
 
     window.addEventListener('resize', ()=>{
-        setSize(Math.floor(window.innerWidth / 420))
-        console.log(window.innerWidth / 400)
+        if(Math.floor(window.innerWidth / 420) == 0){
+            setSize(1)
+        } else setSize(Math.floor(window.innerWidth / 420))
     })
 
     const [comments, setComments] = useState([])
@@ -27,7 +28,6 @@ function ReviewsSec() {
             copy.push(reviews[i])
         }
         setComments([...copy])
-        console.log(size)
     }, [size, page])
 
     useMemo(()=>{

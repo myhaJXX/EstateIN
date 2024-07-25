@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import FooterColumn from './FooterColumn'
+import { useNavigate } from 'react-router-dom'
 
 function Footer() {
 
@@ -15,6 +16,8 @@ function Footer() {
         {title:"Services", links: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum']},
         {title:"Contact Us", links: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum']},
     ]
+
+    const nav = useNavigate()
 
   return (
     <footer>
@@ -30,7 +33,9 @@ function Footer() {
                 get in touch with our team for personalized assistance.
                 </p>
             </div>
-            <button>Explore Properties</button>
+            <button onClick={()=>{
+                nav('/error')
+            }}>Explore Properties</button>
         </div>
 
         <div className={cl.middle}>

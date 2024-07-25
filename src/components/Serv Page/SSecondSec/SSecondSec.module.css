@@ -67,3 +67,36 @@
     border-color: var(--light-purple);
     color: var(--light-purple);
 }
+
+@media (max-width: 800px){
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 500px){
+
+    .bigCard h3{
+        width: calc(100% - 100px);
+    }
+
+    .bigCard button{
+        width: 100px;
+        padding: 10px;
+    }
+
+    .box>article{
+        grid-template: 40px 1fr / 40px 1fr;
+    }
+
+    .box svg{
+        height: 20px;
+        width: 20px;
+        padding: 10px;
+    }
+
+    .box h4{
+        font-size: 1em;
+    }
+}

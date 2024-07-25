@@ -22,3 +22,22 @@
     border: 2px solid var(--greyv2);
     border-radius: 15px;
 }
+
+@media (max-width: 800px){
+    .card{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .cont>div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card{
+        width: 100%;
+        border-radius: 5px;
+    }
+}   
