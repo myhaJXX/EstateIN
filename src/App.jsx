@@ -24,7 +24,7 @@ function App() {
 
     return (
         <>
-            <BrowserRouter>
+            <HashRouter basename='/'>
                 <Header setPage={setPage}/>
                 <Routes>
                     <Route exact path='/' element={<MainPage/>}/>
@@ -35,7 +35,7 @@ function App() {
                     <Route path='/catalog' element={<PropPage/>}/>
                 </Routes>
                 <Footer/>
-            </BrowserRouter>
+            </HashRouter>
         </>
     )
 }
