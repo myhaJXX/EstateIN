@@ -217,7 +217,7 @@ footer{
 .previewSec-module-cont-dYT0n{
     height: 850px;
     display: grid;
-    grid-template: 1fr 250px / repeat(2, 1fr);
+    grid-template: 600px 250px / repeat(2, 1fr);
 }
 
 .previewSec-module-cont-dYT0n>aside{
